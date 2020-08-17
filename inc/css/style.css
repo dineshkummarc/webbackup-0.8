@@ -1,0 +1,325 @@
+/**----------------------------------------------------------------------------------
+ | WebBackup v 0.8 -  by Marcos Timm Rossow
+ | Copyright (c) 2010 Marcos Timm Rossow
+ | Email: marcos@marcos.blog.br
+ | Site: http://webbackup.marcos.blog.br
+ +-----------------------------------------------------------------------------------
+ | WebBackup is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU General Public License as published by
+ | the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ | WebBackup is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ | See the GNU General Public License for more details on http://www.gnu.org/licenses/
+ +------------------------------------------------------------------------------- **/
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: verdana, arial;
+	background-color: #efefef;
+}
+
+body {
+	overflow: auto;
+}
+
+img {
+	border: 0px;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+form p {
+	display: block;
+	width: 100%;
+	float: left;
+	margin: 2px 0px 2px 0px !important;
+	width: 500px;
+}
+
+#conteiner {
+	width: 600px;
+	margin: 20px auto;
+}
+
+#conteiner-log {
+	width: 100%;
+}
+
+#login-box {
+	width: 421px;
+	height: 152px;
+	margin: 40px auto;
+	padding: 20px;
+	background-image: url('../img/bg-login.png');
+}
+
+#login-box p {
+	padding: 5px;
+}
+
+#head {
+	width: 600px;
+	height: 120px;
+	float: left;
+}
+
+#head-log {
+	width: 100%;
+	height: 120px;
+}
+
+#logo {
+	float: left;
+}
+
+#logo-login {
+	width: 345px;
+	margin: 30px auto;
+}
+
+.login-error {
+	display: block;
+	width: 600px;
+	text-align: center;
+	color: red;
+}
+
+#logo h1, #logo-login h1 {
+	display: block;
+	width: 345px;
+	height: 100px;
+	text-indent: -1999px;
+	overflow: hidden;
+	margin: 0px;
+	background-image: url('../img/webbackup.png');
+}
+
+#user {
+	float: left;
+	text-align: right;
+	width: 250px;
+}
+
+#user-log {
+	float: left;
+	text-align: right;
+	width: 400px;
+}
+
+#user a {
+	text-decoration: none;
+	color: blue;
+}
+
+#user a:hover {
+	text-decoration: underline;
+}
+
+#body {
+	float: left;
+	margin-top: 10px;
+	position: relative;
+}
+
+#log {
+	width: 100%-1px;
+	background-color: white;
+	padding: 20px 10px 20px 10px;
+}
+
+.content {
+	width: 580px;
+	padding: 10px;
+	margin-bottom: 24px;
+	background-color: white;
+}
+
+.top {
+	width: 600px;
+	height: 24px;
+	background-image: url('../img/bg.png');
+}
+
+.bottom {
+	width: 600px;
+	height: 24px;
+	bottom: 0px;
+	position: absolute;
+	background-image: url('../img/bg.png');
+	background-position: 0px 24px;
+}
+
+.menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 580px;
+	float: left;
+}
+
+.menu ul li {
+	float: right;
+	margin-left: 10px;
+}
+
+.menu ul li img {
+	float: left;
+	margin-right: 2px;
+}
+
+.menu ul li a {
+	color: blue;
+	text-decoration: none;
+}
+
+.menu ul li a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 16px;
+	color: #999999;
+}
+
+#schedules table {
+	width: 100%;
+}
+
+#schedules table tr th {
+	background-color: #F3F3F3;
+	height: 20px;
+	color: #A6A6A6;
+}
+
+#schedules table tr td {
+	font-size: 10px;
+	height: 20px;
+	color: #666666;
+}
+
+#schedules table tr td a {
+	margin: 0px 5px 0px 5px;
+}
+
+.center {
+	text-align: center;
+}
+
+#new-schedule p, #my-acount p {
+	color: #747474;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	float: left;
+	color: #747474;
+	width: 140px;
+}
+
+label.error {
+	color: red;
+	font-size: 10px;
+	width: auto;
+	margin: 4px 0px 0px 5px;
+}
+
+input.error {
+	background-color: #fdd6d6;
+}
+
+#backupchoice label.error {
+	display: none;
+}
+
+.tip, .tip-left {
+	font-size: 10px;
+	font-style: italic;
+	color: #999999;
+}
+
+.tip-left {
+	margin-left: 140px;
+	display: block;
+	clear: left;
+}
+
+.label-bigger {
+	width: 180px;
+}
+
+.hide {
+	display: none;
+}
+
+input, select {
+	float: left;
+	width: 185px;
+}
+
+fieldset {
+	border: 1px solid #dedede;
+}
+
+#field-files {
+	background: white url('../img/files.png') 99% 0% no-repeat;
+}
+
+#field-db {
+	background: white url('../img/db.png') 99% 0% no-repeat;
+}
+
+.ftp {
+	background: white url('../img/web.png') 99% 10px no-repeat;
+	border: 1px solid #97b6d9;
+}
+
+fieldset legend {
+	color: #747474;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+#print {
+	float: left;
+	width: 420px;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.choice-report {
+		width: 700px;
+		float: left;
+		margin: 10px 0px 10px 10px;
+}
+
+
+h3, hr	 {
+	clear: left;
+}
+
+#foot {
+	width: 600px;
+	float: left;
+}
+
+#foot, #foot a {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	color: #333333;
+}

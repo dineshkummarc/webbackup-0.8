@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webbackup>
+   <schedule>
+      <name>Sample Schedule</name>
+      <email>mail@server.com</email>
+      <repeat>Daily</repeat>
+      <fileformat>zip</fileformat>
+      <backup>files/db</backup>
+      <folder>/www</folder>
+      <host>localhost</host>
+      <user>root</user>
+      <pass></pass>
+      <dbname>mydb</dbname>
+      <ftphost>ftp.backupserver.com</ftphost>
+      <ftpuser>user</ftpuser>
+      <ftppass>pass</ftppass>
+      <ftpfolder>backup</ftpfolder>
+      <id>1</id>
+      <last>never</last>
+   </schedule>
+   <schedule>
+      <name>MyNewSchedule</name>
+      <email>dineshkummarc@yahoo.com</email>
+      <repeat>Month</repeat>
+      <fileformat>zip</fileformat>
+      <backup>db</backup>
+      <folder></folder>
+      <host>localhost</host>
+      <user>root</user>
+      <pass></pass>
+      <dbname>sysfrm</dbname>
+      <ftphost>localhost</ftphost>
+      <ftpuser>admin</ftpuser>
+      <ftppass>admin</ftppass>
+      <ftpfolder>/</ftpfolder>
+      <id>2</id>
+      <last>never</last>
+   </schedule>
+</webbackup>
